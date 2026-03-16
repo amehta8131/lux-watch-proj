@@ -1,55 +1,61 @@
-# Watch Market Analysis
+# Watch Secondary Market Analysis
 
 ## Overview
-This project analyzes luxury watch market data sourced from Chrono24, one of thelargest watch marketplaces.
-The dataset contains 280,000+ listings across major brands including Rolex, Omega, Patek Philippe, TAG Heuer, Cartier, and Seiko. 
-The goal is to identify pricing trends, brand positioning, and market dynamics across the global secondary watch market.
-
-## Tools Used
-- **Python** (Pandas, NumPy, Matplotlib, Seaborn) — data cleaning and analysis
-- **SQL** — querying and aggregating large datasets
-- **Power BI / Tableau** — dashboard and visualization
-- **Excel** — supplementary analysis
+An exploratory data analysis and machine learning project analyzing 9,777 watches across 14 brands on the secondary market. The goal of this project is to uncover pricing trends, identify value drivers, and build a model that predicts resale prices based on watch characteristics.
 
 ## Dataset
-- **Source:** [Luxury Watch Listings — Kaggle](https://www.kaggle.com/datasets/philmorekoung11/luxury-watch-listings)
-- **Size:** 280,000+ listings
-- **Fields:** Brand, reference number, price, movement type, and more
+- 9,777 watches
+- 14 brands including Cartier, IWC, TAG Heuer, Seiko, and Longines
+- Features include brand, model, price, movement type, case material, bracelet material, condition, and year of production
+- Source: Secondary watch market platform
 
-## Business Questions
-- Which brands command the highest average listing prices?
-- How does movement type (automatic vs quartz) affect price?
-- Which brands have the widest price range and who targets which market segment?
-- What does listing volume tell us about brand popularity and market demand?
-- How are prices distributed across the broader luxury watch market?
-
-## Key Findings
-*To be updated as analysis is completed*
+## Tools & Technologies
+- Python
+- SQL (pandasql)
+- Pandas
+- Seaborn
+- Matplotlib
+- Scikit-learn
+- XGBoost
 
 ## Project Structure
 ```
-watch-market-analysis/
-│
-├── README.md
-├── data/
-│   └── watch_listings.csv
-├── notebooks/
-│   └── watch_analysis.ipynb
-├── queries/
-│   └── watch_queries.sql
-└── visuals/
-    └── screenshots of charts and dashboards
+├── Watches_cleaned.xlsx        # Cleaned dataset
+├── watches_analysis.ipynb      # Main analysis notebook
+└── README.md                   # Project documentation
 ```
 
+## Business Questions Answered
+1. Which brands command the highest average price on the secondary market?
+2. Does watch condition impact resale price?
+3. Which movement type tends to be most expensive?
+4. What are the most popular case and bracelet materials?
+5. Does case material influence price?
+6. What is the price distribution across all watches?
+
+## Key Findings
+- IWC commands the highest average resale price while Seiko has the lowest
+- Unworn watches fetch significantly higher resale prices than used ones
+- Manual winding movements tend to be the most expensive
+- Steel is the most popular case and bracelet material
+- Precious metal cases command significantly higher prices than steel
+- IWC and Cartier retain the highest resale value for older watches
+- The majority of secondary market listings in this data set are priced under $5,000
+
+## Machine Learning Model
+Built three regression models to predict watch resale price:
+- Linear Regression (baseline)
+- Random Forest
+- XGBoost
+
+Features used: brand, movement, case material, bracelet material, condition, year of production
+
 ## How to Run
-1. Clone this repository
-2. Download the full dataset from the Kaggle link above and place it in the `data/` folder
-3. Open `notebooks/watch_analysis.ipynb` in Jupyter Notebook or VS Code
-4. Run cells in order
+1. Clone the repository
+2. Open watches_analysis.ipynb in Google Colab or Jupyter Notebook
+3. Update the dataset URL in Section 1 with your own raw GitHub link
+4. Run all cells in order
 
-## About Me
-Data analyst with experience in SQL, Python, and business intelligence tools. 
-Background in financial reporting, supply chain operations, and revenue analytics.
-Currently building a portfolio of data projects across retail, finance, and consumer markets.
-
-[LinkedIn](https://www.linkedin.com/in/aakash-mehta-20772a261/) | [Email](aakash_mehta@live.com)
+## Author
+Your Name  
+[LinkedIn](https://www.linkedin.com/in/aakash-mehta-20772a261/) | [GitHub](https://github.com/amehta8131)
