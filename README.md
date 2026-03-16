@@ -57,5 +57,5 @@ Features used: brand, movement, case material, bracelet material, condition, yea
 4. Run all cells in order
 
 ## Author
-Your Name  
+Aakash Mehta  
 [LinkedIn](https://www.linkedin.com/in/aakash-mehta-20772a261/) | [GitHub](https://github.com/amehta8131)
