@@ -76,6 +76,7 @@ strongest predictors of resale price, followed by case material and condition.
 2. Open watches_analysis.ipynb in Google Colab or Jupyter Notebook
 3. Update the dataset URL in Section 1 with your own raw GitHub link
 4. Run all cells in order
+5. If you would just like to view the code and results, you can find it in watches_analysis.ipynb 
 
 ## Author
 Aakash Mehta  
