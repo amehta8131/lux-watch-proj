@@ -1,4 +1,4 @@
-# Watch Secondary Market Analysis
+# Luxury Watch Secondary Market Analysis
 
 ## Overview
 An exploratory data analysis and machine learning project analyzing 9,777 watches across 14 brands on the secondary market. The goal of this project is to uncover pricing trends, identify value drivers, and build a model that predicts resale prices based on watch characteristics.
